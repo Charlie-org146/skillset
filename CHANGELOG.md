@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.1.4 - 2026-11-16
+
+- No code changes
+
+### How to verify
+
+1. In a checkout of this branch, run `python3 ~/.workflow-loop/template-v0.27.58/skills/workflow-setup/scripts/setup.py migration-check --pr`.
+   Expect: `MIGRATION OK (--pr: state codes not checked)`.
+2. Run the same command without `--pr`.
+   Expect: only `MIG_WIKI_STALE` lines (Bass-tab, Home, Tests) and `MIGRATION: 3 gap(s) (0 PR-closable, 3 state)`.
+3. Open README.md and docs/wiki/Home.md and find the Automation table.
+   Expect: health, regression and digest email read `on (declared)`; health and regression read `every 4 hours`; each row names the Claude scheduled task skillset-health-regression and links a Runbook at the v0.27.58 tag.
+4. After the merge, run `python3 ~/.workflow-loop/template-v0.27.58/skills/workflow-docs/scripts/docs.py publish` and then the full migration-check again.
+   Expect: `MIGRATION: 0 gap(s)` (done line 1 passes in full).
+
 ## v0.1.3 - 2026-11-13
 
 - Wiki: update pages for lyric-layout
