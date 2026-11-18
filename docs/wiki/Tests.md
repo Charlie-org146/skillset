@@ -22,7 +22,7 @@
 | Test | Kind | Guards | Result | Date | Run | Seen failing |
 |---|---|---|---|---|---|---|
 | <a id="t-repo-suite"></a>repo-suite | requirement | - | PASS | 2026-11-13 | [CI 2026-11-13](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-13) | 2026-11-09 |
-| <a id="t-repo-public"></a>repo-public | requirement | - | PASS | 2026-11-13 | [CI 2026-11-13](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-13) | 2026-11-09 |
+| <a id="t-repo-public"></a>repo-public | requirement | - | PASS | 2026-11-18 | [CI 2026-11-18](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-18) | 2026-11-09 |
 | <a id="t-health-clear-1"></a>health-clear-1 | workflow | done line health-clear:1 | not run | - | local | 2026-11-12 |
 | <a id="t-chart-polish-1"></a>chart-polish-1 | requirement | done line chart-polish:1 | PASS | 2026-11-13 | [CI 2026-11-13](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-13) | 2026-11-12 |
 | <a id="t-chart-polish-2"></a>chart-polish-2 | requirement | done line chart-polish:1 | PASS | 2026-11-13 | [CI 2026-11-13](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-13) | 2026-11-12 |
@@ -38,9 +38,9 @@
 | <a id="t-chart-polish-12"></a>chart-polish-12 | requirement | done line chart-polish:1 | PASS | 2026-11-13 | [CI 2026-11-13](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-13) | 2026-11-12 |
 | <a id="t-chart-polish-13"></a>chart-polish-13 | requirement | done line chart-polish:1 | PASS | 2026-11-13 | [CI 2026-11-13](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-13) | 2026-11-12 |
 | <a id="t-chart-polish-14"></a>chart-polish-14 | requirement | done line missing-runs:1 | PASS | 2026-11-13 | [CI 2026-11-13](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-13) | 2026-11-12 |
-| <a id="t-docs-consolidate-1"></a>docs-consolidate-1 | requirement | done line docs-consolidate:1 | PASS | 2026-11-13 | [CI 2026-11-13](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-13) | 2026-11-13 |
-| <a id="t-docs-consolidate-2"></a>docs-consolidate-2 | requirement | done line docs-consolidate:2 | PASS | 2026-11-13 | [CI 2026-11-13](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-13) | 2026-11-13 |
-| <a id="t-docs-consolidate-3"></a>docs-consolidate-3 | requirement | done line docs-consolidate:3 | PASS | 2026-11-13 | [CI 2026-11-13](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-13) | 2026-11-13 |
+| <a id="t-docs-consolidate-1"></a>docs-consolidate-1 | requirement | done line docs-consolidate:1 | PASS | 2026-11-18 | [CI 2026-11-18](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-18) | 2026-11-13 |
+| <a id="t-docs-consolidate-2"></a>docs-consolidate-2 | requirement | done line docs-consolidate:2 | PASS | 2026-11-18 | [CI 2026-11-18](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-18) | 2026-11-13 |
+| <a id="t-docs-consolidate-3"></a>docs-consolidate-3 | requirement | done line docs-consolidate:3 | PASS | 2026-11-18 | [CI 2026-11-18](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-18) | 2026-11-13 |
 | <a id="t-lyric-layout-1"></a>lyric-layout-1 | requirement | done line lyric-layout:1 | PASS | 2026-11-13 | [CI 2026-11-13](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-13) | 2026-11-13 |
 | <a id="t-lyric-layout-2"></a>lyric-layout-2 | requirement | done line lyric-layout:2 | PASS | 2026-11-13 | [CI 2026-11-13](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-13) | 2026-11-13 |
 | <a id="t-lyric-layout-3"></a>lyric-layout-3 | requirement | done line lyric-layout:2 | PASS | 2026-11-13 | [CI 2026-11-13](https://github.com/jcl2018/skillset/actions/workflows/regression.yml?query=created%3A2026-11-13) | 2026-11-13 |

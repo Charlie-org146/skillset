@@ -1,9 +1,11 @@
 <!-- workflow-docs -->
 # Bass-tab
 
+How to use: [How-to-use-Bass-tab](How-to-use-Bass-tab)
+
 Milestone: https://github.com/jcl2018/skillset/milestone/1
 
-Review: **Unreviewed**
+Review: **Unreviewed** <!-- kept docs-v2-migration@ab1908d -->
 
 ## Problem
 - I learn bass lines from many places: tab videos on YouTube and Bilibili, tab sites like Songsterr, other sites I find, screenshots and PDFs.
@@ -65,6 +67,68 @@ Review: **Unreviewed**
 ## Success metrics
 - Every chart is at most two pages, with the header filled in.
 - Every transcription that has a source report prints it.
+
+## Revisions
+
+### BAS-1
+
+| rev | date | text | why | approved |
+|---|---|---|---|---|
+| r1 | 2026-11-11 | One format, Songsterr-style <br> Every song is written to the same song file and printed in one layout modeled on Songsterr's tab: one line per string, labeled at left; bar numbers above bars; time signatures where they change; rhythm marks under notes. <br> The layout is adjusted for print: several bars per line, repeats collapsed. <br> The fixture song's compact tab matches its recorded baseline exactly. | migration r1; date from its stamp | o2: "Yes" |
+
+### BAS-2
+
+| rev | date | text | why | approved |
+|---|---|---|---|---|
+| r1 | 2026-11-18 | The whole song at a glance <br> A bold label where each section starts. <br> A repeated figure is drawn once with its count (x4). <br> A section that repeats an earlier one is one line ("Chorus 2 = Chorus"). <br> Chord names sit over their bars, and each lyric under its own bar. <br> A lyric prints in its own band under the lowest string and any rhythm marks, never on a string line or a fret digit, the estimate mark or a repeat count; one wider than its bar widens the bar, then wraps to a second line, then shrinks to the template's lyric minimum, and never runs into the next bar. <br> A section starts on a new line and, when the song has a tempo, its label carries its start time. <br> A repeat count sits above the closing repeat sign, clear of chord names and bar numbers. <br> A missing bar is drawn full width and marked "missing"; two or more plain missing bars in a row print as one line with their range, cut at each section start. <br> An estimated bar carries a "≈" sign and is never folded into a repeat or a section reference; repeats and references also stop at a change of chord. | migration r1; date from the run day | o2: "Yes" |
+
+### BAS-3
+
+| rev | date | text | why | approved |
+|---|---|---|---|---|
+| r1 | 2026-11-18 | Fits a printout <br> Two US-Letter pages at most, tab digits at 9 pt or more. <br> Repeats collapse and spacing tightens before the font shrinks. <br> A song that still can't fit is refused with a line naming it. <br> A song that fits one page gets larger digits (over 10 pt). | migration r1; date from the run day | o2: "Yes" |
+
+### BAS-4
+
+| rev | date | text | why | approved |
+|---|---|---|---|---|
+| r1 | 2026-11-11 | Same input, same printout <br> Rendering the same song file twice gives byte-identical PDFs. | migration r1; date from its stamp | o2: "Yes" |
+
+### BAS-5
+
+| rev | date | text | why | approved |
+|---|---|---|---|---|
+| r1 | 2026-11-11 | No silent question marks <br> A Chinese or other non-Latin title or lyric is never printed as question marks. <br> It renders correctly, or it's refused with a fix line. | migration r1; date from its stamp | o2: "Yes" |
+
+### BAS-6
+
+| rev | date | text | why | approved |
+|---|---|---|---|---|
+| r1 | 2026-11-18 | Only what the sources show <br> Sources are whatever I provide: any URL (such as a video, Songsterr or another tab site, or a lyrics or chord page), screenshots, PDFs, notes. <br> Each bar, chord and lyric comes only from a source I provided and can be traced to it, never from memory or a web search I didn't ask for. <br> A source it can't open or read is never guessed around. <br> A person reading the source report checks this; no test can: the row only checks the report's format (BAS-8). | migration r1; date from the run day | o2: "Yes" |
+
+### BAS-7
+
+| rev | date | text | why | approved |
+|---|---|---|---|---|
+| r1 | 2026-11-18 | Song header <br> Every chart starts with the same header: title, artist, BPM, key, time signature, tuning, instrument (such as 5-string bass), and every source used. <br> A header field with no value follows BAS-10 (the old second bullet of this requirement was merged into BAS-10). | migration r1; date from the run day | o2: "Yes" |
+
+### BAS-8
+
+| rev | date | text | why | approved |
+|---|---|---|---|---|
+| r1 | 2026-11-18 | Source report <br> A transcription's report has a fixed format listing missing bars, bars that are estimates, which source gave each section, and any source it couldn't open or read. <br> The chart prints it after the last stave line; a song with no report, or a report that names no bar, list or source, prints none, and an explicit empty list prints "none". | migration r1; date from the run day | o2: "Yes" |
+
+### BAS-9
+
+| rev | date | text | why | approved |
+|---|---|---|---|---|
+| r1 | 2026-11-11 | Four- and five-string bass <br> The tab draws as many string lines as the song's bass has (4 or 5, such as a low B), labeled to match its tuning. | migration r1; date from its stamp | o2: "Yes" |
+
+### BAS-10
+
+| rev | date | text | why | approved |
+|---|---|---|---|---|
+| r1 | 2026-11-18 | One format template <br> One template file defines the printed layout: header fields and order; how a section starts and how repeats and repeated sections show; the Songsterr-style staff; where chords and lyrics sit, including the smallest size a long lyric shrinks to; spacing and fonts. <br> Every song renders through it, so changing it changes every song the same way. <br> A header field with no value is left out, never a blank or a guess; a missing title still reads "not shown". | migration r1; date from the run day | o2: "Yes" |
 
 ## Tests
 
