@@ -67,19 +67,19 @@
   "automation": [
     {
       "name": "health",
-      "does": "Checks the repo, files findings (run by the Claude scheduled task skillset-health-regression on this Mac). [Runbook](https://github.com/jcl2018/agent-workflow-template/blob/v0.27.58/docs/wiki/Health.md#health-round)",
+      "does": "Checks the repo, files findings (run by the Claude scheduled task skillset-health-regression on this Mac). Runbook: the template's Health and Regression pages.",
       "cadence": "47 */4 * * *",
       "runs": "mac:skillset-health-regression"
     },
     {
       "name": "regression",
-      "does": "Runs the regression rows (run by the Claude scheduled task skillset-health-regression on this Mac). [Runbook](https://github.com/jcl2018/agent-workflow-template/blob/v0.27.58/docs/wiki/Regression.md#regression-round)",
+      "does": "Runs the regression rows (run by the Claude scheduled task skillset-health-regression on this Mac). Runbook: the template's Health and Regression pages.",
       "cadence": "17 */4 * * *",
       "runs": "mac:skillset-health-regression"
     },
     {
       "name": "digest email",
-      "does": "Mails the round's digest (run by the Claude scheduled task skillset-health-regression on this Mac). [Runbook](https://github.com/jcl2018/agent-workflow-template/blob/v0.27.58/docs/wiki/Health.md#health-round)",
+      "does": "Mails the round's digest (run by the Claude scheduled task skillset-health-regression on this Mac). Runbook: the template's Health and Regression pages.",
       "cadence": "with each health round",
       "runs": "mac:skillset-health-regression"
     }
