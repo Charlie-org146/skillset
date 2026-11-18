@@ -5,7 +5,7 @@ How to use: [How-to-use-Bass-tab](How-to-use-Bass-tab)
 
 Milestone: https://github.com/jcl2018/skillset/milestone/1
 
-Review: **Unreviewed**
+Review: **Unreviewed** <!-- kept docs-v2-migration@665d4a9 -->
 
 ## Problem
 - I learn bass lines from many places: tab videos on YouTube and Bilibili, tab sites like Songsterr, other sites I find, screenshots and PDFs.
