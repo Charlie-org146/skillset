@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.5 - 2026-11-18
+
+- No code changes
+
+### How to verify
+
+No manual steps were recorded.
+
 ## v0.1.4 - 2026-11-16
 
 - No code changes
