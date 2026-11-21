@@ -15,10 +15,16 @@ Review: **Unreviewed** <!-- kept docs-v2-migration@ab1908d -->
 ## Requirements
 
 ### Functional
-- BAS-1: **Reviewed 2026-11-11** One format, Songsterr-style <!-- reviewed ce865339 -->
+- BAS-1: **Unreviewed** One format, Songsterr-style
   - Every song is written to the same song file and printed in one layout modeled on Songsterr's tab: one line per string, labeled at left; bar numbers above bars; time signatures where they change; rhythm marks under notes.
   - The layout is adjusted for print: several bars per line, repeats collapsed.
   - The fixture song's compact tab matches its recorded baseline exactly.
+
+  - Feature markers v1
+  - Reference: reference missing
+  - Line 1: metric missing; test 1 linked rows, see Tests
+  - Line 2: metric missing; test 1 linked rows, see Tests
+  - Line 3: metric missing; test 1 linked rows, see Tests
 - BAS-2: **Unreviewed** The whole song at a glance
   - A bold label where each section starts.
   - A repeated figure is drawn once with its count (x4).
@@ -29,23 +35,62 @@ Review: **Unreviewed** <!-- kept docs-v2-migration@ab1908d -->
   - A repeat count sits above the closing repeat sign, clear of chord names and bar numbers.
   - A missing bar is drawn full width and marked "missing"; two or more plain missing bars in a row print as one line with their range, cut at each section start.
   - An estimated bar carries a "≈" sign and is never folded into a repeat or a section reference; repeats and references also stop at a change of chord.
+
+  - Feature markers v1
+  - Reference: reference missing
+  - Line 1: metric missing; test 1 linked rows, see Tests
+  - Line 2: metric missing; test 1 linked rows, see Tests
+  - Line 3: metric missing; test 1 linked rows, see Tests
+  - Line 4: metric missing; test 1 linked rows, see Tests
+  - Line 5: metric missing; test 1 linked rows, see Tests
+  - Line 6: metric missing; test 1 linked rows, see Tests
+  - Line 7: metric missing; test 1 linked rows, see Tests
+  - Line 8: metric missing; test 1 linked rows, see Tests
+  - Line 9: metric missing; test 1 linked rows, see Tests
 - BAS-6: **Unreviewed** Only what the sources show
   - Sources are whatever I provide: any URL (such as a video, Songsterr or another tab site, or a lyrics or chord page), screenshots, PDFs, notes.
   - Each bar, chord and lyric comes only from a source I provided and can be traced to it, never from memory or a web search I didn't ask for.
   - A source it can't open or read is never guessed around.
   - A person reading the source report checks this; no test can: the row only checks the report's format (BAS-8).
+
+  - Feature markers v1
+  - Reference: reference missing
+  - Line 1: metric missing; test 1 linked rows, see Tests
+  - Line 2: metric missing; test 1 linked rows, see Tests
+  - Line 3: metric missing; test 1 linked rows, see Tests
+  - Line 4: metric missing; test 1 linked rows, see Tests
 - BAS-7: **Unreviewed** Song header
   - Every chart starts with the same header: title, artist, BPM, key, time signature, tuning, instrument (such as 5-string bass), and every source used.
   - A header field with no value follows BAS-10 (the old second bullet of this requirement was merged into BAS-10).
+
+  - Feature markers v1
+  - Reference: reference missing
+  - Line 1: metric missing; test 1 linked rows, see Tests
+  - Line 2: metric missing; test 1 linked rows, see Tests
 - BAS-8: **Unreviewed** Source report
   - A transcription's report has a fixed format listing missing bars, bars that are estimates, which source gave each section, and any source it couldn't open or read.
   - The chart prints it after the last stave line; a song with no report, or a report that names no bar, list or source, prints none, and an explicit empty list prints "none".
-- BAS-9: **Reviewed 2026-11-11** Four- and five-string bass <!-- reviewed 399a7de6 -->
+
+  - Feature markers v1
+  - Reference: reference missing
+  - Line 1: metric missing; test 1 linked rows, see Tests
+  - Line 2: metric missing; test 1 linked rows, see Tests
+- BAS-9: **Unreviewed** Four- and five-string bass
   - The tab draws as many string lines as the song's bass has (4 or 5, such as a low B), labeled to match its tuning.
+
+  - Feature markers v1
+  - Reference: reference missing
+  - Line 1: metric missing; test 1 linked rows, see Tests
 - BAS-10: **Unreviewed** One format template
   - One template file defines the printed layout: header fields and order; how a section starts and how repeats and repeated sections show; the Songsterr-style staff; where chords and lyrics sit, including the smallest size a long lyric shrinks to; spacing and fonts.
   - Every song renders through it, so changing it changes every song the same way.
   - A header field with no value is left out, never a blank or a guess; a missing title still reads "not shown".
+
+  - Feature markers v1
+  - Reference: reference missing
+  - Line 1: metric missing; test 1 linked rows, see Tests
+  - Line 2: metric missing; test 1 linked rows, see Tests
+  - Line 3: metric missing; test 1 linked rows, see Tests
 
 ### Non-functional
 - BAS-3: **Unreviewed** Fits a printout
@@ -53,11 +98,27 @@ Review: **Unreviewed** <!-- kept docs-v2-migration@ab1908d -->
   - Repeats collapse and spacing tightens before the font shrinks.
   - A song that still can't fit is refused with a line naming it.
   - A song that fits one page gets larger digits (over 10 pt).
-- BAS-4: **Reviewed 2026-11-11** Same input, same printout <!-- reviewed 91020a70 -->
+
+  - Feature markers v1
+  - Reference: reference missing
+  - Line 1: metric missing; test 1 linked rows, see Tests
+  - Line 2: metric missing; test 1 linked rows, see Tests
+  - Line 3: metric missing; test 1 linked rows, see Tests
+  - Line 4: metric missing; test 1 linked rows, see Tests
+- BAS-4: **Unreviewed** Same input, same printout
   - Rendering the same song file twice gives byte-identical PDFs.
-- BAS-5: **Reviewed 2026-11-11** No silent question marks <!-- reviewed 4ebe8a8d -->
+
+  - Feature markers v1
+  - Reference: reference missing
+  - Line 1: metric missing; test 1 linked rows, see Tests
+- BAS-5: **Unreviewed** No silent question marks
   - A Chinese or other non-Latin title or lyric is never printed as question marks.
   - It renders correctly, or it's refused with a fix line.
+
+  - Feature markers v1
+  - Reference: reference missing
+  - Line 1: metric missing; test 2 linked rows, see Tests
+  - Line 2: metric missing; test 2 linked rows, see Tests
 
 ## Non-goals
 - It doesn't hear audio or transcribe by ear: it reads what the sources show.
